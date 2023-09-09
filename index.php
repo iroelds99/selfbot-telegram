@@ -4,7 +4,7 @@ if (!file_exists('madeline.php')) {
     copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
 }
 if (!file_exists('Config.json')) {
-  file_put_contents('Config.json', '{"Monshi":0,"Markread":0,"Typing":0,"Poker":0,"Enemy":0}');
+  file_put_contents('Config.json', '{"Monshi":0,"Markread":0,"Typing":1,"Poker":0,"Enemy":0}');
 }
 define('MADELINE_BRANCH', 'deprecated');
 include "madeline.php";
