@@ -15,7 +15,7 @@ include "madeline.php";
     }
     @ob_end_clean();
     header('Connection: close');
-    ignore_user_abort(true);
+    ignore_user_abort(true);:
     ob_start();
     echo "$message";
     $size = ob_get_length();
