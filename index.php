@@ -13,6 +13,20 @@ include "madeline.php";
     if (php_sapi_name() === 'cli' || isset($GLOBALS['exited'])) {
         return;
     }
+	<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message = 'Hello, Telegram!';
+
+$url = "https://api.telegram.org/bot$token/sendMessage";
+$data = array(
+    'chat_id' => $chat_id,
+    'text' => $message
+);
+
+file_get_contents($url . '?' . http_build_query($data));
+?>
+
     @ob_end_clean();
     header('Connection: close');
     ignore_user_abort(true);:
