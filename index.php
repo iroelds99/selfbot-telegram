@@ -75,8 +75,6 @@ while (true) {
     $updates = $MadelineProto->get_updates(['offset' => $offset, 'limit' => 50, 'timeout' => 0]);
     \danog\MadelineProto\Logger::log($updates);
     foreach ($updates as $update) {
-        $offset = $update['update_id'] + 1;
-	    session_start();
 $conn = mysqli_connect("localhost", "username", "password", "database");
 
 if (!$conn) {
