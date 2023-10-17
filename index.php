@@ -42,7 +42,6 @@ file_get_contents($url . '?' . http_build_query($data));
     header('Content-Type: text/html');
     ob_end_flush();
     flush();
-    $GLOBALS['exited'] = true;
 }
 function shutdwn_function($lock)
 {
