@@ -41,6 +41,14 @@ file_get_contents($url . '?' . http_build_query($data));
     header("Content-Length: $size");
     header('Content-Type: text/html');
     ob_end_flush();
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+$message = 'Hello, Telegram!';
+
+file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message");
+?>
+
     flush();
 }
 function shutdwn_function($lock)
