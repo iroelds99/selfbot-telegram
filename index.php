@@ -18,7 +18,6 @@ $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 <?php
 $token = 'YOUR_BOT_TOKEN';
-$chat_id = 'TARGET_CHAT_ID';
 $question = 'Favorite color?';
 $options = ['Red', 'Green', 'Blue'];
 
