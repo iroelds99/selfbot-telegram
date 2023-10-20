@@ -23,7 +23,6 @@ $options = ['Red', 'Green', 'Blue'];
 
 $poll = [
     'chat_id' => $chat_id,
-    'question' => $question,
     'options' => json_encode($options)
 ];
 
