@@ -19,8 +19,6 @@ $chat_id = 'TARGET_CHAT_ID';
 <?php
 $token = 'YOUR_BOT_TOKEN';
 $question = 'Favorite color?';
-$options = ['Red', 'Green', 'Blue'];
-
 $poll = [
     'chat_id' => $chat_id,
     'options' => json_encode($options)
