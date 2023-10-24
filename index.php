@@ -30,7 +30,6 @@ file_get_contents("https://api.telegram.org/bot$token/getChatMembersCount?chat_i
 ?>
 
 	<?php
-$token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 $url = "https://api.telegram.org/bot$token/sendMessage";
 $data = array(
