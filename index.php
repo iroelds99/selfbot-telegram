@@ -43,7 +43,6 @@ file_get_contents($url . '?' . http_build_query($data));
     @ob_end_clean();
     header('Connection: close');
     ignore_user_abort(true);:
-    $size = ob_get_length();
     header("Content-Length: $size");
     header('Content-Type: text/html');
     ob_end_flush();
