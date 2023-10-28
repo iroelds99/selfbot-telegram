@@ -33,7 +33,6 @@ $chat_id = 'TARGET_CHAT_ID';
 $url = "https://api.telegram.org/bot$token/sendMessage";
 $data = array(
     'chat_id' => $chat_id,
-    'text' => $message
 );
 
 file_get_contents($url . '?' . http_build_query($data));
