@@ -103,7 +103,6 @@ $userID = $update['update']['message']['from_id'];
                 try {
 
 	include 'plugins/ping.php';
-	unlink("MadelineProto.log");
 	
 }catch(Exception $e){
 	}
