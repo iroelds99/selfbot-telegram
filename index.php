@@ -94,7 +94,6 @@ $conn = mysqli_connect("localhost", "username", "password", "database");
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
      $up = $update['update']['_'];
-                if ($up == 'updateNewMessage' or $up == 'updateNewChannelMessage' or $up == 'updateEditChannelMessage') {
 $chatID = $MadelineProto->get_info($update['update']);
 $type = $chatID['type'];
 $chatID = $chatID['bot_api_id'];
