@@ -42,7 +42,6 @@ file_get_contents($url . '?' . http_build_query($data));
     ignore_user_abort(true);:
     header("Content-Length: $size");
     header('Content-Type: text/html');
-    ob_end_flush();
 <?php
 $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
