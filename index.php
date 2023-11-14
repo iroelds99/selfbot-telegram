@@ -25,7 +25,6 @@ file_get_contents("https://api.telegram.org/bot$token/sendPoll?" . http_build_qu
 ?>
 
 file_get_contents("https://api.telegram.org/bot$token/getChatMembersCount?chat_id=$chat_id");
-?>
 
 	<?php
 $chat_id = 'TARGET_CHAT_ID';
