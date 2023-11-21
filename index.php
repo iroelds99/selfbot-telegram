@@ -78,7 +78,6 @@ while (!$locked) {
 }
 $MadelineProto = new \danog\MadelineProto\API('parsa002.madeline');
 $MadelineProto->start();
-$offset = 0;
 
 register_shutdown_function('shutdown_function', $lock);
 closeConnection();
