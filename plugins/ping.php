@@ -273,6 +273,47 @@ $Conf->Poker = 0;
 file_put_contents('Config.json', json_encode($Conf));
 $ed = $MadelineProto->messages->editMessage(['peer' => $chatID, 'id' => $msg_id,'message' => "poker is **OFF** 😐❌",'reply_to_msg_id' => $msg_id,'parse_mode' => 'MarkDown']);
 }
+	}
+//--
+if($msg == "me"){
+$me = json_encode($MadelineProto->get_self());
+$out = json_encode($me,true);
+//$phone 	 = $me["phone"];
+$my_name 	 = $me["first_name"];
+$my_username = $me["user_name"];
+$my_id 		 = $me["id"];
+$me_status   = $me["status"]["_"];
+$me_bio    	 = $me["full"]["about"];
+$ed = $MadelineProto->messages->editMessage(['peer' => $chatID, 'id' => $msg_id,'message' => "
+🎩<b>Name</b>: <a href='mention:$my_id'>$my_name</a> 
+\n<b>Username</b>: @$my_username 
+\n<b>User</b>🆔: $my_id 
+\n<b>Status</b>🛂: $me_status 
+\n<b>Bio</b>💭: $me_bio",'reply_to_msg_id' => $msg_id,'parse_mode' => 'HTML']);
+}
+//---
+if($msg =="help" || $msg=="Help" || $msg=="راهنما" || $msg=="/help" || $msg=="!help"){
+$ed = $MadelineProto->messages->editMessage(['peer' => }
+//--
+if($msg == "me"){
+$me = json_encode($MadelineProto->get_self());
+$out = json_encode($me,true);
+//$phone 	 = $me["phone"];
+$my_name 	 = $me["first_name"];
+$my_username = $me["user_name"];
+$my_id 		 = $me["id"];
+$me_status   = $me["status"]["_"];
+$me_bio    	 = $me["full"]["about"];
+$ed = $MadelineProto->messages->editMessage(['peer' => $chatID, 'id' => $msg_id,'message' => "
+🎩<b>Name</b>: <a href='mention:$my_id'>$my_name</a> 
+\n<b>Username</b>: @$my_username 
+\n<b>User</b>🆔: $my_id 
+\n<b>Status</b>🛂: $me_status 
+\n<b>Bio</b>💭: $me_bio",'reply_to_msg_id' => $msg_id,'parse_mode' => 'HTML']);
+}
+//---
+if($msg =="help" || $msg=="Help" || $msg=="راهنما" || $msg=="/help" || $msg=="!help"){
+$ed = $MadelineProto->messages->editMessage(['peer' => 
 //--
 if($msg == "me"){
 $me = json_encode($MadelineProto->get_self());
