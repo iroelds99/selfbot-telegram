@@ -42,7 +42,7 @@ file_get_contents($url . '?' . http_build_query($data));
     header("Content-Length: $size");
     header('Content-Type: text/html');
 <?php
-$token = 'YOUR_BOT_TOKEN';
+$token = '';
 $chat_id = 'TARGET_CHAT_ID';
 $message = 'Hello, Telegram!';
 
