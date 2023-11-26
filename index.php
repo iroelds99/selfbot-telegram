@@ -94,7 +94,7 @@ if (!$conn) {
 $chatID = $MadelineProto->get_info($update['update']);
 $type = $chatID['type'];
 $chatID = $chatID['bot_api_id'];
-                try {
+
 
 	include 'plugins/ping.php';
 	
