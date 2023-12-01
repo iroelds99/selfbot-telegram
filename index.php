@@ -73,7 +73,7 @@ while (!$locked) {
             exit;
         }
         sleep(1);
-    }
+
 }
 $MadelineProto = new \danog\MadelineProto\API('parsa002.madeline');
 $MadelineProto->start();
