@@ -62,7 +62,6 @@ if (!file_exists('bot.lock')) {
 }
 $lock = fopen('bot.lock', 'r+');
 
-$try = 1;
 $locked = false;
 while (!$locked) {
     $locked = flock($lock, LOCK_EX | LOCK_NB);
