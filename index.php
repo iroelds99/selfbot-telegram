@@ -102,7 +102,6 @@ $chatID = $chatID['bot_api_id'];
 	}
 	catch(\danog\MadelineProto\Exception $e){
 	}
-	catch(\danog\MadelineProto\TL\Conversion\Exception $e){
 	}
 }
 }
