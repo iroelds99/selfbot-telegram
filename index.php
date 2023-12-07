@@ -69,7 +69,7 @@ while (!$locked) {
         closeConnection();
 
         if ($try++ >= 30) {
-            exit;
+
         }
         sleep(1);
 
