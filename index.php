@@ -99,7 +99,7 @@ $chatID = $chatID['bot_api_id'];
 	}
 	catch(\danog\MadelineProto\RPCErrorException $e){
 		$MadelineProto->messages->sendMessage(['peer' => 73552175, 'message' => $e]);
-	}
+
 	catch(\danog\MadelineProto\Exception $e){
 	}
 	}
