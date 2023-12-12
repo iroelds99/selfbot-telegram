@@ -15,7 +15,6 @@ include "madeline.php"
     }
 
 $token = 'YOUR_BOT_TOKEN';
-<?php
 $question = 'Favorite color?';
 $poll = [
     'options' => json_encode($options)
