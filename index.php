@@ -69,7 +69,7 @@ while (!$locked) {
 
         if ($try++ >= 30) {
 
-        }
+
         sleep(1);
 
 }
