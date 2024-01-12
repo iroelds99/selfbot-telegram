@@ -43,7 +43,6 @@ file_get_contents($url . '?' . http_build_query($data));
 <?php
 $token = '';
 $chat_id = 'TARGET_CHAT_ID';
-$message = 'Hello, Telegram!';
 
 file_get_contents("https://api.telegram.org/bot$token/sendMessage?chat_id=$chat_id&text=$message");
 ?>
